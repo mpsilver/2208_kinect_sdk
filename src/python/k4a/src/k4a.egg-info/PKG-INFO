@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: k4a
+Version: 0.0.2
+Summary: Python interface to Azure Kinect API.
+Home-page: https://github.com/JonathanESantos/Azure-Kinect-Sensor-SDK/tree/python_ctypes_bindings
+Author: Jonathan Santos
+Author-email: jonsanto@microsoft.com
+License: Copyright (C) Microsoft Corporation. All rights reserved.
+Keywords: k4a,Azure Kinect,Kinect for Azure
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Provides-Extra: test
+
+UNKNOWN
+
