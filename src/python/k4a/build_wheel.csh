@@ -54,25 +54,6 @@ pip install -e .
 pip install wheel
 pip wheel . -w build
 
-# Build the docs and move them to the build/ folder. doxygen must be in the path.
-if command -v doxygen &> /dev/null
-then
-    mkdir ./build/docs
-    doxygen ./Doxyfile
-else
-    echo "doxygen not found, skipping building the documentation."
-fi
-
-# Create a convenient documentation.html that redirects to the index.html that doxygen generates.
-echo '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta http-equiv="REFRESH" content="0;URL=html/index.html">
-</html>' > ./build/docs/documentation.html
-
-
 # Deactivate virtual environment and delete it.
 deactivate
 rm -rf "temp_build_venv"
